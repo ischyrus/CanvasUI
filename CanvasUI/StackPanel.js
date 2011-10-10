@@ -11,7 +11,7 @@ var StackPanel = Klass(CanvasNode, {
 		this.ancestors.push('StackPanel');
 	},
 
-	drawChildren: function(ctx) {
+	drawChildren: function(ctx, width, height) {
 		var isVertical = this.orientation == 'vertical';
 
 		// We have to reverse whatever translations we do
@@ -25,19 +25,11 @@ var StackPanel = Klass(CanvasNode, {
 
 			item.x += translateX;
 			item.y += translateY;
-      item.handleDraw(ctx);
+      var itemSize = item.handleDraw(ctx, (isVertical ? width : Number.NaN), (isVertical ? Number.NaN : height));
 			item.x -= translateX;
 			item.y -= translateY;
 
-			var length = 0;
-			if (item.measure) {
-				var measurement = item.measure();
-				length = isVertical ? measurement.height : measurement.width;
-			}
-			else {
-				length = isVertical ? item.height : item.width;
-			}
-
+			var length = isVertical ? itemSize.height : itemSize.width;
 			if (isVertical) {
 				translateY += length;
 			}
@@ -46,11 +38,11 @@ var StackPanel = Klass(CanvasNode, {
 			}
     }
 
-		// reverse the translate(s) performed
-		this.translate(translateX * -1, translateY * -1);
+		if (isVertical) {
+			return { width: width, height: translateY };
+		}
+		else {
+			return { width: translateX, height: height };
+		}
 	}
-
-	//draw : function(ctx) {
-	//
-	//}
 });

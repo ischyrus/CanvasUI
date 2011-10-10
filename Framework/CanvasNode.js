@@ -28,6 +28,9 @@
 
   */
 CanvasNode = Klass(Animatable, Transformable, {
+	actualWidth : 0,
+	actualHeight: 0,
+
   OBJECTBOUNDINGBOX : 'objectBoundingBox',
 
   // whether to draw the node and its childNodes or not
@@ -606,12 +609,16 @@ CanvasNode = Klass(Animatable, Transformable, {
     */
   isPointInPath : false,
 
-	drawChildren: function(ctx) {
+	drawChildren: function(ctx, width, height) {
 		var c = this.__getChildrenCopy()
     this.__zSort(c);
-    for(var i=0; i<c.length; i++) {
-      c[i].handleDraw(ctx)
+		var bounds = { height: 0, width: 0 }
+    for(var i = 0; i < c.length; i++) {
+      var itemBounds = c[i].handleDraw(ctx, width, height);
+			bounds.height = Math.max(bounds.height, itemBounds.height + (c[i].cy || 0));
+			bounds.width = Math.max(bounds.width, itemBounds.width + (c[i].cx || 0));
     }
+		return bounds;
 	},
 
   /**
@@ -629,7 +636,7 @@ CanvasNode = Klass(Animatable, Transformable, {
 
     @param ctx Canvas 2D context
     */
-  handleDraw : function(ctx) {
+  handleDraw : function(ctx, width, height) {
     // CSS display & visibility
     if (this.display)
       this.visible = (this.display != 'none')
@@ -664,18 +671,18 @@ CanvasNode = Klass(Animatable, Transformable, {
         ctx.clip()
       }
     }
-    if (this.drawable && this.draw)
-      this.draw(ctx)
 
-		/* This commented out code was what was originally here.
-		 * I moved it to drawChildren(ctx) so that it can be overridden
-		 * by something like StackPanel. */
-    // var c = this.__getChildrenCopy()
-    // this.__zSort(c);
-    // for(var i=0; i<c.length; i++) {
-    //   c[i].handleDraw(ctx)
-    // }
-		this.drawChildren(ctx);
+		var size = null;
+
+    if (this.drawable && this.draw){
+      size = this.draw(ctx, width, height)
+			size.width += (this.cx || 0)
+			size.height += (this.cy || 0)
+		}
+		else
+			size = { width: width, height: height }
+
+		var bounds = this.drawChildren(ctx, size.width, size.height)
 		
     ctx.fontFamily = pff
     ctx.fontSize = pfs
@@ -683,6 +690,11 @@ CanvasNode = Klass(Animatable, Transformable, {
     ctx.fillOn = pfo
     ctx.strokeOn = pso
     ctx.restore()
+
+		var finalSize = { width: Math.max(size.width, bounds.width), height: Math.max(size.height, bounds.height) }
+		this.actualWidth = bounds.width;
+		this.actualHeight = bounds.height;
+		return finalSize
   },
 
   /**

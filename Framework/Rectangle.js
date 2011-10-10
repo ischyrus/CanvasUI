@@ -40,12 +40,16 @@ Rectangle = Klass(Drawable, {
     this.ancestors.push("Rectangle")
   },
 
+	measure : function() {
+		return { width: this.width, height: this.height };
+	},
+
   /**
     Creates a rectangular path using ctx.rect(...).
 
     @param ctx Canvas drawing context.
     */
-  drawGeometry : function(ctx) {
+  drawGeometry : function(ctx, width, height) {
     var x = this.cx
     var y = this.cy
     var w = (this.width || (this.x2 - x))
@@ -78,6 +82,8 @@ Rectangle = Klass(Drawable, {
       if (h < 0) y += h
       ctx.rect(x, y, Math.abs(w), Math.abs(h))
     }
+
+		return this.measure();
   },
 
   /**

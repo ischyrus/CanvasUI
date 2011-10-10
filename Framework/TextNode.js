@@ -35,6 +35,7 @@ T = function(text) {
   @param config Optional config hash.
   */
 TextNode = Klass(Drawable, {
+	color: 'black',
   text : 'Text',
   align : 'start', // 'left' | 'right' | 'center' | 'start' | 'end'
   baseline : 'top', // 'top' | 'hanging' | 'middle' | 'alphabetic' |
@@ -58,24 +59,28 @@ TextNode = Klass(Drawable, {
     this.ancestors.push("TextNode")
   },
 
-  drawGeometry : function(ctx) {
-    this.drawUsing(ctx, this.__drawMethodName)
+  drawGeometry : function(ctx, width, height) {
+		ctx.fillStyle = this.color;
+    return this.drawUsing(ctx, this.__drawMethodName, width, height)
   },
 
   drawPickingPath : function(ctx) {
     this.drawUsing(ctx, this.__pickingMethodName)
   },
 
-  drawUsing : function(ctx, methodName) {
+  drawUsing : function(ctx, methodName, width, height) {
     if (!this.text || this.text.length == 0)
-      return
+      return { width: 0, height: 0 }
     if (this.lastText != this.text || this.lastStyle != ctx.font) {
       this.dimensions = this.measureText(ctx)
       this.lastText = this.text
       this.lastStyle = ctx.font
     }
-    if (this[methodName])
-      this[methodName](ctx)
+
+		if (this[methodName])
+      this[methodName](ctx, width, height)
+
+		return this.measureText(ctx);
   },
 
   measureText : function(ctx) {
@@ -101,18 +106,27 @@ TextNode = Klass(Drawable, {
     ctx.save()
     if (this.font)
       ctx.font = this.font
-    var measurments = ctx.measureText(this.text)
-    var result = {width: measurments.width, height: 20}
+
+		var regex = new RegExp("[0-9]+", 'i');
+		var extractedHeight = parseInt(regex.exec(ctx.font) || '20');
+
+    var measurements = ctx.measureText(this.text)
+    var result = { width: measurements.width, height: extractedHeight }
     ctx.restore()
+
     return result;
   },
 
-  drawHTML5 : function(ctx) {
-    if (this.align == 'center' && this.dimensions.width < this.width) {
-      ctx.fillText(this.text, (this.width / 2) - (this.dimensions.width / 2), this.cy, this.maxWidth);
+  drawHTML5 : function(ctx, width, height) {
+		var regex = new RegExp("[0-9]+", 'i');
+		var extractedHeight = parseInt(regex.exec(ctx.font) || '20');
+		var y = this.cy + extractedHeight;
+
+    if (this.align == 'center' && this.dimensions.width < width) {
+      ctx.fillText(this.text, (width / 2) - (this.dimensions.width / 2), y, this.maxWidth);
     }
     else {
-      ctx.fillText(this.text, this.cx, this.cy, this.maxWidth)
+      ctx.fillText(this.text, this.cx, y, this.maxWidth)
     }
   },
 

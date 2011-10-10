@@ -33,7 +33,7 @@ Circle = Klass(Drawable, {
   },
 
 	measure : function() {
-		var value = { width: this.radius * 2, height: this.radius * 2 };
+		var value = { width: (this.radius * 2), height: (this.radius * 2) };
 		return value;
 	},
 
@@ -42,7 +42,7 @@ Circle = Klass(Drawable, {
 
     @param ctx Canvas drawing context.
     */
-  drawGeometry : function(ctx) {
+  drawGeometry : function(ctx, width, height) {
     if (this.radius == 0) return
     if (this.includeCenter)
       ctx.moveTo(this.cx, this.cy)
@@ -53,9 +53,11 @@ Circle = Klass(Drawable, {
       // firefox 2 is buggy without the endpoint
       var x2 = Math.cos(this.endAngle)
       var y2 = Math.sin(this.endAngle)
-      ctx.moveTo(this.cx + x2*this.radius, this.cy + y2 * this.radius)
+      ctx.moveTo(this.cx + x2 * this.radius, this.cy + y2 * this.radius)
       ctx.closePath()
     }
+
+		return this.measure();
   },
 
   /**

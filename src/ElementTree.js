@@ -1,32 +1,32 @@
-var ElementTree = Klass(CanvasNode, { 
+var ElementTree = Klass(StackPanel, {
 	rootElement: null,
 	
 	initialize : function (rootElement, config) {
-		CanvasNode.initialize.call(this, config);
+		StackPanel.initialize.call(this, config);
 		this.ancestors.push("ElementTree");
 		
 		this.rootElement = rootElement;
 
-		var bg = new Rectangle(this.width, this.height, config);
-		this.append(bg);
+		this.append(new TextNode("Elements", {  align: 'center', font: '24px Arial' }));
+		this.append(new Separator( { fill : 'LightGray', cy: 6 }));
+		this.append(new Separator( { fill : 'Gray'}));
+		this.append(new Separator( { fill : 'LightGray' }));
+	},
 
-		var title = new TextNode("Elements", { 
-			align: 'center',
-			cx: 0,
-			cy: 25,
-			fill: 'black',
-			width: this.width,
-			height: 24,
-			font: '24px Arial'
-		});
-		this.append(title);
+	draw : function(ctx, width, height) {
+		ctx.save();
+		
+		ctx.fillStyle = '#EEEEEE';
+		ctx.beginPath();
+		ctx.moveTo(0, 0);
+		ctx.lineTo(width, 0);
+		ctx.lineTo(width, height);
+		ctx.lineTo(0, height);
+		ctx.closePath();
+		ctx.fill();
 
-		this.addFrameListener(function(t, dt) {
-			if(this.root == null)
-				return;
+		ctx.restore();
 
-			bg.width = this.root.width;
-			bg.height = this.root.height;
-		});
+		return { width: width, height: height };
 	}
 });

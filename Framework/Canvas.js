@@ -523,7 +523,7 @@ Canvas = Klass(CanvasNode, {
       this.clearMouseEvents()
       if (!this.redrawOnlyWhenChanged || this.changed) {
         try {
-          this.handleDraw(ctx)
+          this.handleDraw(ctx, this.width, this.height)
         } catch(e) {
           console.log(e)
           throw(e)
@@ -647,5 +647,7 @@ Canvas = Klass(CanvasNode, {
     ctx.strokeStyle = 'black'
     ctx.fillOn = false
     ctx.strokeOn = false
+
+		return { width: this.width, height: this.height };
   }
 })

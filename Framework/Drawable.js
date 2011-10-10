@@ -96,7 +96,7 @@ Drawable = Klass(CanvasNode, {
 
     @param ctx Canvas drawing context
     */
-  draw : function(ctx) {
+  draw : function(ctx, width, height) {
     if (!this.drawGeometry) return
     // bbox checking is slower than just drawing in most cases.
     // and caching the bboxes is hard to do correctly.
@@ -116,8 +116,13 @@ Drawable = Klass(CanvasNode, {
               ctx.strokeStyle.rotation ||
               ctx.strokeStyle.x ||
               ctx.strokeStyle.y )
-    ctx.beginPath()
-    this.drawGeometry(ctx)
+
+		ctx.beginPath()
+
+		var size = this.drawGeometry(ctx, width, height)
+		this.actualWidth = size.width + this.cx;
+		this.actualHeight = size.height + this.cy;
+
     if (ctx.strokeOn) {
       switch (this.strokeMode) {
         case this.ABOVE:
@@ -143,8 +148,13 @@ Drawable = Klass(CanvasNode, {
     } else if (ctx.fillOn) {
       this.doFill(ctx,ft)
     }
+
     this.drawMarkers(ctx)
-    if (this.clip) ctx.clip()
+
+    if (this.clip)
+			ctx.clip()
+
+		return size
   },
 
   doFill : function(ctx, ft) {

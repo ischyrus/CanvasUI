@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf89b65-69aa-47cc-9ed2-1157c9cfcac9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yuicompressor-2.4.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CanvasUI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IncludeOrder.cfg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/Dev.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CanvasUI/Button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CanvasUI/Toolbar.js" />
+      <change type="DELETED" beforePath="C:\Users\sscherm\Source\CanvasUI\src\init.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CanvasUI/Separator.js" afterPath="$PROJECT_DIR$/CanvasUI/Separator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dev.html" afterPath="$PROJECT_DIR$/Dev.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/Ellipse.js" afterPath="$PROJECT_DIR$/Framework/Ellipse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/Gradient.js" afterPath="$PROJECT_DIR$/Framework/Gradient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IncludeOrder.cfg" afterPath="$PROJECT_DIR$/IncludeOrder.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="canvasanimator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,62 +33,61 @@
     <favorites_list name="canvasanimator" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ElementTree.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ElementTree.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackPanel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CanvasUI/StackPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="217" selection-end="228" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextNode.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/TextNode.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="31" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Circle.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Circle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="19" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IncludeOrder.cfg" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IncludeOrder.cfg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="18" selection-start="878" selection-end="878" vertical-scroll-proportion="0.80929095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Separator.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CanvasUI/Separator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="37" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.45787385">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ElementTree.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ElementTree.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="52" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Toolbar.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CanvasUI/Toolbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="2" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Button.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CanvasUI/Button.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="3" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Klass.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17857143">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Ellipse.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Framework/Ellipse.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="28" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.42857143">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -99,21 +101,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/CanvasNode.js" />
-        <option value="$PROJECT_DIR$/src/TextNode.js" />
-        <option value="$PROJECT_DIR$/src/StackPanel.js" />
-        <option value="$PROJECT_DIR$/Framework/StackPanel.js" />
-        <option value="$PROJECT_DIR$/Framework/Canvas.js" />
-        <option value="$PROJECT_DIR$/Framework/Circle.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Framework/TextNode.js" />
         <option value="$PROJECT_DIR$/Framework/Rectangle.js" />
         <option value="$PROJECT_DIR$/src/ElementTree.js" />
         <option value="$PROJECT_DIR$/Framework/Drawable.js" />
         <option value="$PROJECT_DIR$/CanvasUI/StackPanel.js" />
-        <option value="$PROJECT_DIR$/CanvasUI/Separator.js" />
         <option value="$PROJECT_DIR$/Framework/CanvasNode.js" />
         <option value="$PROJECT_DIR$/src/init.js" />
+        <option value="$PROJECT_DIR$/CanvasUI/Separator.js" />
+        <option value="$PROJECT_DIR$/Framework/Ellipse.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Framework/Gradient.js" />
+        <option value="$PROJECT_DIR$/CanvasUI/Toolbar.js" />
+        <option value="$PROJECT_DIR$/CanvasUI/Button.js" />
+        <option value="$PROJECT_DIR$/Dev.html" />
         <option value="$PROJECT_DIR$/IncludeOrder.cfg" />
       </list>
     </option>
@@ -144,7 +146,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -153,7 +154,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="canvasui" />
+              <option name="myItemId" value="CanvasUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -163,28 +164,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="canvasui" />
+              <option name="myItemId" value="CanvasUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="CanvasUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.Unnamed">
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -223,10 +225,10 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="false" name="Unnamed" type="JavascriptDebugSession" factoryName="Local">
+    <configuration default="false" name="Chrome" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="chrome" />
-        <option name="fileUrl" value="file://$PROJECT_DIR$/index.html" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/Dev.html" />
       </JSDebuggerConfigurationSettings>
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -255,7 +257,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
-    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
+    <configuration useDefault="true">C:\Users\sscherm\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -267,7 +269,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="2552" y="-8" width="2576" height="1456" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -275,8 +277,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.109375" sideWeight="0.68333334" order="1" side_tool="true" content_ui="tabs" x="617" y="81" width="206" height="756" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1092739" sideWeight="0.5601023" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4398977" sideWeight="0.9992035" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.097890966" sideWeight="0.5689525" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43104747" sideWeight="0.9992035" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -331,96 +333,112 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="32" selection-start="6589" selection-end="6589" vertical-scroll-proportion="0.33256617" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="20" selection-end="24" vertical-scroll-proportion="0.025242718" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/RecordingContext.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="424" column="0" selection-start="12169" selection-end="12169" vertical-scroll-proportion="0.33169532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Drawable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="4484" selection-end="4484" vertical-scroll-proportion="0.33256352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="693" column="0" selection-start="19103" selection-end="19103" vertical-scroll-proportion="0.57274824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Rectangle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2225" selection-end="2225" vertical-scroll-proportion="2.3510392">
+        <state line="86" column="0" selection-start="2225" selection-end="2225" vertical-scroll-proportion="2.3510392" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Curves.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.357143">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ElementTree.js">
+    <entry file="file://$PROJECT_DIR$/Framework/Ellipse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+        <state line="28" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.42857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2628" selection-end="2628" vertical-scroll-proportion="0.6363636">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CanvasUI/Separator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="37" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/TextNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="31" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.0">
+        <state line="17" column="3" selection-start="398" selection-end="398" vertical-scroll-proportion="0.30357143">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Circle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
+        <state line="26" column="13" selection-start="513" selection-end="513" vertical-scroll-proportion="0.39285713">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/init.js">
+    <entry file="file://$PROJECT_DIR$/Framework/TextNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="66" selection-start="61" selection-end="103" vertical-scroll-proportion="0.09535452">
+        <state line="62" column="27" selection-start="1680" selection-end="1680" vertical-scroll-proportion="-0.31730768">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CanvasUI/StackPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="217" selection-end="228" vertical-scroll-proportion="0.0">
+        <state line="6" column="11" selection-start="217" selection-end="228" vertical-scroll-proportion="0.10714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ElementTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="52" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Gradient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="-0.08928572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CanvasUI/Toolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IncludeOrder.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="878" selection-end="878" vertical-scroll-proportion="0.80929095">
+        <state line="40" column="19" selection-start="898" selection-end="898" vertical-scroll-proportion="0.71428573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dev.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="42" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.5495751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CanvasUI/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17857143">
           <folding />
         </state>
       </provider>

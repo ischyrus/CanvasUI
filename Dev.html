@@ -42,9 +42,10 @@
 		<script src="CanvasUI/UI5.js" type="text/javascript"></script>
 		<script src="CanvasUI/Separator.js" type="text/javascript"></script>
 		<script src="CanvasUI/StackPanel.js" type="text/javascript"></script>
+		<script src="CanvasUI/Button.js" type="text/javascript"></script>
+		<script src="CanvasUI/Toolbar.js" type="text/javascript"></script>
 
 		<script src="src/ElementTree.js" type="text/javascript"></script>
-		<script src="src/init.js" type="text/javascript"></script>
 
 		<style type="text/css">
 			* {
@@ -88,14 +89,26 @@
 
 			window.onload = function() {
 				updateLeftColumnSize();
-				ca.init();
+
+        var cake = new Canvas(document.getElementById('drawingCanvas'));
+
+  	    var stack = new StackPanel();
+  	    stack.append(new Circle(20, { fill: 'red', positionTopCenter: true }));
+  	    stack.append(new Circle(20, { fill: 'blue', positionTopCenter: true }));
+  	    stack.append(new TextNode('hello', { color : 'red' }));
+				stack.append(new Ellipse(40, 20, { fill : 'yellow', positionTopCenter: true }));
+  	    stack.append(new Circle(30, { fill: 'green', positionTopCenter: true }));
+  	    cake.append(stack);
+
+        var elementTreeCanvasDom = document.getElementById('leftColumn');
+        var elementTreeCanvas = new Canvas(elementTreeCanvasDom);
+        var elementTree = new ElementTree(cake, { fill: '#f5f5f5' });
+  	    elementTreeCanvas.append(elementTree);
 			};
 		</script>
 	</head>
 	<body>
-		<canvas id="leftColumn" width="200">
-			
-		</canvas>
+		<canvas id="leftColumn" width="200"></canvas>
 		<canvas id="drawingCanvas" width="400" height="400"></canvas>
 	</body>
 </html>

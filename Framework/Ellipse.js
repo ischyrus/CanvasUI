@@ -19,8 +19,17 @@ Ellipse = Klass(Circle, {
     this.ancestors.push("Ellipse")
   },
 
-  drawGeometry : function(ctx) {
+	measure : function() {
+		var value = { width : (this.radiusX * 2), height : (this.radiusY * 2) };
+		return value;
+	},
+
+  drawGeometry : function(ctx, width, height) {
     if (this.radiusX == 0 || this.radiusY == 0) return
+
+		if (this.positionTopCenter)
+			ctx.translate(this.radiusX, this.radiusY);
+
     var k = 0.5522847498
     var x = this.cx
     var y = this.cy
@@ -31,6 +40,8 @@ Ellipse = Klass(Circle, {
     ctx.bezierCurveTo(x-krx, y-this.radiusY, x-this.radiusX, y-kry, x-this.radiusX, y)
     ctx.bezierCurveTo(x-this.radiusX, y+kry, x-krx, y+this.radiusY, x, y+this.radiusY)
     ctx.bezierCurveTo(x+krx, y+this.radiusY, x+this.radiusX, y+kry, x+this.radiusX, y)
+
+		return this.measure();
   },
 
   isPointInPath : function(x, y) {

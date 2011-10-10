@@ -5,7 +5,6 @@
  */
 
 var Separator = Klass(Rectangle, {
-
 	initialize: function(config) {
 		Rectangle.initialize.call(this, 0, 1, config);
 		this.ancestors.push('Separator');

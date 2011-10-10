@@ -72,6 +72,20 @@ The circle uses cx and cy parameters as it's center. Sometimes it is easier to j
  canvas.append(stack);
  stack.add(new Circle(30, { fill : 'blue' }));</code></pre>
 
+####Ellipse
+
+** New Options**
+
+The ellipse uses cx and cy parameters as it's center. Sometimes it is easier to just specific the top-left position by setting positionTopCenter to true. (Default is false)
+
+{ positionTopCenter : false }
+
+**Example**
+<pre><code>var canvas = new Canvas(document.getElementById('drawingCanvas'));
+ var stack = new StackPanel({ orientation : '[vertical|horizontal]' });
+ canvas.append(stack);
+ stack.add(new Ellipse(40, 20, { fill : 'yellow', positionTopCenter: true }));</code></pre>
+
 ####TextNode
 
 The default CakeJS was to draw the text with the current point being at the bottom left. If you are drawing text along along the top of the canvas you can accidentally draw the text entirely off the canvas, appearing like a bug. This TextNode will draw the text like you might expect with the starting point being the top left.

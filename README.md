@@ -20,7 +20,7 @@ Dev.html is setup to reference all of the individual javascript files. An exampl
 
 ### Layout Controls
 
-######StackPanel
+####StackPanel
 
 Used to stack items horizontally or vertically. 
 
@@ -36,7 +36,7 @@ Used to stack items horizontally or vertically.
 
 ### Canvas UI Controls
 
-######Separator
+####Separator
 
 Used to provide a horizontal line.
 
@@ -50,7 +50,7 @@ Used to provide a horizontal line.
 
 __*NOTE:*__ _These are the controls that have been ported so far. Eventually I'll get to the rest._
 
-######Rectangle
+####Rectangle
 
 **Example**
 <pre><code>var canvas = new Canvas(document.getElementById('drawingCanvas'));
@@ -58,7 +58,7 @@ __*NOTE:*__ _These are the controls that have been ported so far. Eventually I'l
  canvas.append(stack);
  stack.add(new Rectangle(20, 10, { fill : 'red' }));</code></pre>
 
-######Circle
+####Circle
 
 ** New Options**
 
@@ -72,7 +72,7 @@ The circle uses cx and cy parameters as it's center. Sometimes it is easier to j
  canvas.append(stack);
  stack.add(new Circle(30, { fill : 'blue' }));</code></pre>
 
-######TextNode
+####TextNode
 
 The default CakeJS was to draw the text with the current point being at the bottom left. If you are drawing text along along the top of the canvas you can accidentally draw the text entirely off the canvas, appearing like a bug. This TextNode will draw the text like you might expect with the starting point being the top left.
 

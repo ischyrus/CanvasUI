@@ -1,0 +1,28 @@
+<project name="JavaScript Compression" default="All" basedir=".">
+	<description>This is an ANT build script to compress all of the javascript files into a single file.</description>
+	<property name="out" location="CanvasUI.js" />
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+
+	<target name="compressfile">
+		<exec executable="java">
+			<arg value="-jar" />
+			<arg value="yuicompressor-2.4.6.jar" />
+			<arg value="-o" />
+			<arg value="temp.js" />
+			<arg value="${filename}" />
+		</exec>
+		<concat destfile="${out}" append="true">
+			<fileset file="temp.js" />
+		</concat>
+		<concat destfile="${out}" append="true">${line.separator}</concat>
+		<delete file="temp.js" />
+	</target>
+
+	<target name="All">
+		<loadfile property="file-content" srcFile="IncludeOrder.cfg"/>
+		<foreach target="compressfile"
+				     list="${file-content}"
+    				 delimiter="${line.separator}"
+    				 param="filename" />
+	</target>
+</project>

@@ -29,9 +29,16 @@ Line = Klass(Drawable, {
     this.ancestors.push("Line")
   },
 
+	measure : function() {
+		var width = this.x1 < this.x2 ? this.x2 - this.x1 : this.x1 - this.x2;
+		var height = this.y1 < this.y2 ? this.y2 - this.y1 : this.y1 - this.y2;
+		return { width: width, height: height };
+	},
+
   drawGeometry : function(ctx) {
     ctx.moveTo(this.x1, this.y1)
     ctx.lineTo(this.x2, this.y2)
+		return this.measure();
   },
 
   getStartPoint : function() {

@@ -62,6 +62,14 @@ __*NOTE:*__ _These are the controls that have been ported so far. Eventually I'l
  canvas.append(stack);
  stack.add(new Rectangle(20, 10, { fill : 'red' }));</code></pre>
 
+ ####Line
+
+**Example**
+<pre><code>var canvas = new Canvas(document.getElementById('drawingCanvas'));
+ var stack = new StackPanel({ orientation : '[vertical|horizontal]' });
+ canvas.append(stack);
+ stack.add(new Line(20, 10, 40 , 10, { fill : 'red' }));</code></pre>
+
 ####Circle
 
 ** New Options**

@@ -2,11 +2,15 @@ UI Framework for HTML5 Canvas
 ==============================
 
 ##Summary
-The goal for this project is to provide a set of javascript controls that can be used to write a UI using the HTML canvas. 
+The goal for this project is to provide a tool to create UI and animations using the HTML canvas.
 
 ###But why? 
 
 For fun and to see what kind of web apps a canvas UI framework would produce. My long term goal is to provide a way to construct sophisticated and pretty animated scenes right in the browser.
+
+###Development
+
+Right now the project is just in the works and I'm exploring the idea more than actively developing something. My initial primary object is to provide a way to build up a tool that allows for an animated scene to be built on the canvas.
 
 ###Libraries
 

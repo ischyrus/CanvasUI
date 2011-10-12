@@ -636,7 +636,7 @@ CanvasNode = Klass(Animatable, Transformable, {
 
     @param ctx Canvas 2D context
     */
-  handleDraw : function(ctx, width, height) {
+		handleDraw : function(ctx, width, height) {
     // CSS display & visibility
     if (this.display)
       this.visible = (this.display != 'none')

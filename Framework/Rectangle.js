@@ -45,8 +45,8 @@ Rectangle = Klass(Drawable, {
 			return this.lastMeasure;
 
 		return {
-			x: this.width == Number.NaN ? 0 : this.width,
-			y: this.height == Number.NaN ? 0 : this.height
+			x: isNaN(this.width) ? 0 : this.width,
+			y: isNaN(this.height) ? 0 : this.height
 		};
 	},
 
@@ -92,6 +92,8 @@ Rectangle = Klass(Drawable, {
       if (h < 0) y += h
       ctx.rect(x, y, Math.abs(w), Math.abs(h))
     }
+
+		this.lastMeasure = { width: w, height: h };
 
 		return this.measure();
   },

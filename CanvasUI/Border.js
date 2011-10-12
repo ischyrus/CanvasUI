@@ -16,11 +16,13 @@ var Border = Klass(CanvasNode, {
 
 		// TODO: will it be a problem that this is never appended?
 		this.rect = new Rectangle(Number.NaN, Number.NaN, config);
+		this.rect.x = 0.5;
+		this.rect.y = 0.5;
 	},
 
 	drawChildren: function(ctx, width, height) {
 		var result = CanvasNode.drawChildren.call(this, ctx, width, height);
-		result = this.rect.handleDraw(ctx, result.width - 1, result.height - 1);
+		result = this.rect.handleDraw(ctx, result.width - 1.5, result.height - 1.5);
 		return result;
 	},
 

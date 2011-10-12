@@ -4,6 +4,7 @@
  * All children must implement a measure function that returns { width: [value], height: [value] }.
  */
 var StackPanel = Klass(CanvasNode, {
+	adornments: [],
 	orientation: 'vertical', /* Options are 'vertical' or 'horizontal' */
 
 	initialize : function (config) {
@@ -17,6 +18,10 @@ var StackPanel = Klass(CanvasNode, {
 		// We have to reverse whatever translations we do
 		var translateX = 0;
 		var translateY = 0;
+
+		for (var i = 0; this.adornments && i < this.adornments.length; i++) {
+			this.adornments[i].handleDraw(ctx, width, height);
+		}
 
 		var c = this.__getChildrenCopy()
     this.__zSort(c);

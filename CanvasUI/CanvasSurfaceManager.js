@@ -15,15 +15,19 @@ var CanvasSurfaceManager = new Klass({
 	},
 
 	handleMouseDown : function(x, y) {
-
+		this.removeSelection();
+		this.selectionStart = [x, y];
 	},
 
 	handleMouseMove : function(x, y) {
-
+		var isMouseDown = event.which == 1;
+		if(isMouseDown && this.selectionStart) {
+			this.updateSelection([x, y]);
+		}
 	},
 
 	handleMouseUp : function(x, y) {
-
+		this.selectionStart = null;
 	},
 
 	handleMouseClick : function(x, y) {
@@ -59,23 +63,19 @@ var CanvasSurfaceManager = new Klass({
 
 	wireupCanvasEvents : function(canvas) {
 		canvas.addEventListener('mousedown', (function(evt) {
-			this.removeSelection();
-			this.selectionStart = [evt.layerX, evt.layerY];
+			this.handleMouseDown(evt.layerX, evt.layerY);
 		}).bind(this), false);
 
 		canvas.addEventListener('mousemove', (function(evt) {
-			var isMouseDown = evt.which == 1;
-			if(isMouseDown && this.selectionStart) {
-				this.updateSelection([evt.layerX, evt.layerY]);
-			}
+			this.handleMouseMove(evt.layerX, evt.layerY);
 		}).bind(this), false);
 
 		canvas.addEventListener('mouseup', (function(evt) {
-			this.selectionStart = null;
+			this.handleMouseUp(evt.layerX, evt.layerY);
 		}).bind(this), false);
 
 		canvas.addEventListener('click', (function(evt) {
-
+			this.handleMouseClick(evt.layerX, evt.layerY);
 		}).bind(this), false);
 	}
 });

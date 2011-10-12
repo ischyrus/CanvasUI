@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf89b65-69aa-47cc-9ed2-1157c9cfcac9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CanvasUI/SelectionOutline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CanvasUI/Border.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" afterPath="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CanvasUI/StackPanel.js" afterPath="$PROJECT_DIR$/CanvasUI/StackPanel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dev.html" afterPath="$PROJECT_DIR$/Dev.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/Gradient.js" afterPath="$PROJECT_DIR$/Framework/Gradient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/Rectangle.js" afterPath="$PROJECT_DIR$/Framework/Rectangle.js" />
     </list>
     <ignored path="canvasanimator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,28 +30,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CanvasSurfaceManager.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CanvasSurfaceManager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="50" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.7468085">
+            <state line="46" column="42" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dev.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Klass.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Toolbar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CanvasUI/Toolbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="35" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dev.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dev.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="18" selection-start="3497" selection-end="3497" vertical-scroll-proportion="-8.363636">
+            <state line="74" column="30" selection-start="3655" selection-end="3655" vertical-scroll-proportion="0.4964029">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CanvasNode.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
+      <file leaf-file-name="Rectangle.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/Rectangle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="433" column="0" selection-start="11070" selection-end="11070" vertical-scroll-proportion="-5.6923075">
+            <state line="61" column="45" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,24 +89,43 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Framework/Drawable.js" />
-        <option value="$PROJECT_DIR$/CanvasUI/StackPanel.js" />
-        <option value="$PROJECT_DIR$/Framework/CanvasNode.js" />
-        <option value="$PROJECT_DIR$/src/init.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Separator.js" />
         <option value="$PROJECT_DIR$/Framework/Ellipse.js" />
         <option value="$PROJECT_DIR$/Framework/Gradient.js" />
-        <option value="$PROJECT_DIR$/CanvasUI/Toolbar.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Button.js" />
         <option value="$PROJECT_DIR$/IncludeOrder.cfg" />
         <option value="$PROJECT_DIR$/Framework/Line.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CanvasUI/SelectionOutline.js" />
         <option value="$PROJECT_DIR$/Temp.html" />
-        <option value="$PROJECT_DIR$/Dev.html" />
         <option value="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" />
+        <option value="$PROJECT_DIR$/Framework/CanvasNode.js" />
+        <option value="$PROJECT_DIR$/CanvasUI/StackPanel.js" />
+        <option value="$PROJECT_DIR$/Framework/Rectangle.js" />
+        <option value="$PROJECT_DIR$/CanvasUI/Border.js" />
+        <option value="$PROJECT_DIR$/CanvasUI/Toolbar.js" />
+        <option value="$PROJECT_DIR$/Dev.html" />
       </list>
     </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -116,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -138,24 +177,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canvasanimator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canvasui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CanvasUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.Chrome - Dev">
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -226,7 +278,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
-    <configuration useDefault="true">C:\Users\sscherm\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -238,7 +290,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -246,14 +298,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.109375" sideWeight="0.68333334" order="1" side_tool="true" content_ui="tabs" x="617" y="81" width="206" height="756" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1682243" sideWeight="0.6381074" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36189258" sideWeight="0.9992035" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12667023" sideWeight="0.5954198" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40458015" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30478394" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3043478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -308,106 +360,94 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Framework/Pattern.js">
+    <entry file="file://$PROJECT_DIR$/CanvasUI/SelectionOutline.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="45" column="27" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.7078353" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Path.js">
+    <entry file="file://$PROJECT_DIR$/Temp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="70" column="10" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.5066964" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/ObjectExtensions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Mouse.js">
+    <entry file="file://$PROJECT_DIR$/Framework/Helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Animatable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="2" selection-start="3582" selection-end="3582" vertical-scroll-proportion="0.49787235">
-          <folding />
-        </state>
+        <state line="131" column="12" selection-start="3770" selection-end="3773" vertical-scroll-proportion="0.43471336" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/RecordingContext.js">
+    <entry file="file://$PROJECT_DIR$/Framework/Transformable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="1" column="7" selection-start="10" selection-end="11" vertical-scroll-proportion="0.020700637" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Rectangle.js">
+    <entry file="file://$PROJECT_DIR$/CanvasUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="14" selection-start="1068" selection-end="1080" vertical-scroll-proportion="0.49787235">
-          <folding />
-        </state>
+        <state line="0" column="39533" selection-start="39533" selection-end="39533" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CanvasUI/StackPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.05106383">
+        <state line="37" column="23" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.5825688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="635" column="21" selection-start="18239" selection-end="18239" vertical-scroll-proportion="0.5428135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI/SelectionOutline.js">
+    <entry file="file://$PROJECT_DIR$/Framework/Drawable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="27" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.7078353">
+        <state line="121" column="0" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.33279485">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="10" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.5066964">
-          <folding>
-            <element signature="tag#style#0;tag#head#0;tag#html#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="433" column="0" selection-start="11070" selection-end="11070" vertical-scroll-proportion="-5.6923075">
+        <state line="677" column="0" selection-start="18745" selection-end="18745" vertical-scroll-proportion="0.33279485">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Helpers.js">
+    <entry file="file://$PROJECT_DIR$/CanvasUI/Border.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="42" selection-start="7481" selection-end="7485" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.41914892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dev.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="18" selection-start="3497" selection-end="3497" vertical-scroll-proportion="-8.363636">
+        <state line="21" column="0" selection-start="479" selection-end="479" vertical-scroll-proportion="0.44103393">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="50" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.7468085">
+        <state line="46" column="42" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CanvasUI/Toolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Rectangle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="45" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dev.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="30" selection-start="3655" selection-end="3655" vertical-scroll-proportion="0.4964029">
           <folding />
         </state>
       </provider>

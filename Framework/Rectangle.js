@@ -41,7 +41,13 @@ Rectangle = Klass(Drawable, {
   },
 
 	measure : function() {
-		return { width: this.width, height: this.height };
+		if (this.lastMeasure)
+			return this.lastMeasure;
+
+		return {
+			x: this.width == Number.NaN ? 0 : this.width,
+			y: this.height == Number.NaN ? 0 : this.height
+		};
 	},
 
   /**
@@ -52,13 +58,17 @@ Rectangle = Klass(Drawable, {
   drawGeometry : function(ctx, width, height) {
     var x = this.cx
     var y = this.cy
-    var w = (this.width || (this.x2 - x))
-    var h = (this.height || (this.y2 - y))
-    if (w == 0 || h == 0) return
+    var w = isNaN(this.width) ? width + 0.5 : (this.width || (this.x2 - x))
+    var h = isNaN(this.height) ? height + 0.5 : (this.height || (this.y2 - y))
+
+    if (w == 0 || h == 0)
+			return this.measure();
+
     if (this.centered) {
       x -= 0.5*w
       y -= 0.5*h
     }
+		
     if (this.rx || this.ry) {
       // hahaa, welcome to the undocumented rounded corners path
       // using bezier curves approximating ellipse quadrants

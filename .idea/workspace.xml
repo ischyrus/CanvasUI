@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cf89b65-69aa-47cc-9ed2-1157c9cfcac9" name="Default" comment="" />
+    <list default="true" id="3cf89b65-69aa-47cc-9ed2-1157c9cfcac9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Border.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/SelectionOutline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Separator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/StackPanel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/UI5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Animatable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/AudioNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/CanvasSupport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/CatmullRomSpline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Circle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Colors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Curves.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Drawable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/E.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/ElementNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Ellipse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/FramerateHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Gradient.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/ImageNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Klass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/LinkNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Math.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Mouse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/ObjectExtensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Path.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Pattern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/RecordingContext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Rectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/SVGParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Spiral.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/String.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/TextNode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Timeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Transformable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ElementTree.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dev.html" afterPath="$PROJECT_DIR$/Dev.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/CanvasNode.js" afterPath="$PROJECT_DIR$/Framework/CanvasNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IncludeOrder.cfg" afterPath="$PROJECT_DIR$/IncludeOrder.cfg" />
+    </list>
     <ignored path="canvasanimator.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,82 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CanvasSurfaceManager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="42" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Klass.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Toolbar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CanvasUI/Toolbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dev.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dev.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="83" selection-start="4504" selection-end="4504" vertical-scroll-proportion="-15.136364">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Border.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CanvasUI/Border.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Button.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CanvasUI/Button.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.18346775">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanvasNode.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CanvasNode.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="617" column="0" selection-start="16945" selection-end="16945" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Drawable.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Drawable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rectangle.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Rectangle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="47" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0">
+            <state line="33" column="22" selection-start="943" selection-end="943" vertical-scroll-proportion="0.29156998">
               <folding />
             </state>
           </provider>
@@ -118,10 +95,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CanvasUI/Separator.js" />
         <option value="$PROJECT_DIR$/Framework/Ellipse.js" />
         <option value="$PROJECT_DIR$/Framework/Gradient.js" />
-        <option value="$PROJECT_DIR$/IncludeOrder.cfg" />
         <option value="$PROJECT_DIR$/Framework/Line.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CanvasUI/SelectionOutline.js" />
@@ -129,11 +104,13 @@
         <option value="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" />
         <option value="$PROJECT_DIR$/CanvasUI/StackPanel.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Toolbar.js" />
-        <option value="$PROJECT_DIR$/Dev.html" />
         <option value="$PROJECT_DIR$/Framework/Rectangle.js" />
         <option value="$PROJECT_DIR$/Framework/CanvasNode.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Border.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Button.js" />
+        <option value="$PROJECT_DIR$/NewFramework/CanvasNode.js" />
+        <option value="$PROJECT_DIR$/Dev.html" />
+        <option value="$PROJECT_DIR$/IncludeOrder.cfg" />
       </list>
     </option>
   </component>
@@ -163,7 +140,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -192,7 +169,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="canvasui" />
+              <option name="myItemId" value="CanvasUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,27 +177,13 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="canvasanimator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canvasui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canvasanimator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canvasui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CanvasUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -237,6 +200,11 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NewFramework" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Chrome - Dev">
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -319,7 +287,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="874" extended-state="0" />
+    <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -327,8 +295,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.109375" sideWeight="0.68333334" order="1" side_tool="true" content_ui="tabs" x="617" y="81" width="206" height="756" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12667023" sideWeight="0.6713555" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286445" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10593389" sideWeight="0.99924356" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32754344" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -389,98 +357,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="10" selection-start="3489" selection-end="3489" vertical-scroll-proportion="0.5066964" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Animatable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="12" selection-start="3770" selection-end="3773" vertical-scroll-proportion="0.43471336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Transformable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="10" selection-end="11" vertical-scroll-proportion="0.020700637" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39533" selection-start="39533" selection-end="39533" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI/StackPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="23" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.5825688" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="635" column="21" selection-start="18239" selection-end="18239" vertical-scroll-proportion="0.5428135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Klass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="42" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI/Toolbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dev.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="83" selection-start="4504" selection-end="4504" vertical-scroll-proportion="-15.136364">
+        <state line="5" column="40" selection-start="210" selection-end="210" vertical-scroll-proportion="0.051140834">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Drawable.js">
+    <entry file="file://$PROJECT_DIR$/IncludeOrder.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Rectangle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="47" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="617" column="0" selection-start="16945" selection-end="16945" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI/Border.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CanvasUI/Button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.18346775">
+        <state line="33" column="22" selection-start="943" selection-end="943" vertical-scroll-proportion="0.29156998">
           <folding />
         </state>
       </provider>

@@ -89,7 +89,9 @@ Canvas = Klass(CanvasNode, {
   frame : 0,
   elapsed : 0,
   frameDuration : 30,
+	/* Begin Skipped */
   speed : 1.0,
+	/* End Skipped */
   time : 0,
   fps : 0,
   currentRealFps : 0,
@@ -488,17 +490,24 @@ Canvas = Klass(CanvasNode, {
       var realTime = new Date().getTime()
       this.currentRealElapsed = (realTime - this.realTime)
       this.currentRealFps = 1000 / this.currentRealElapsed
+			/* Modification - Got rid of speed */
       var dt = this.frameDuration * this.speed
       if (!this.fixedTimestep)
         dt = this.currentRealElapsed * this.speed
       this.realTime = realTime
+
+			/* Start Skipped */
       if (time != null) {
         this.time = time
         if (timeDelta)
           dt = timeDelta
-      } else {
+      }
+			/* EndSkipped */
+			else {
         this.time += dt
       }
+
+			/* Start Skipped */
       this.previousTarget = this.target
       this.target = null
       if (this.catchMouse)
@@ -530,6 +539,8 @@ Canvas = Klass(CanvasNode, {
         }
         this.changed = false
       }
+			/* End Skipped */
+
       this.currentElapsed = (new Date().getTime() - this.realTime)
       this.elapsed += this.currentElapsed
       this.currentFps = 1000 / this.currentElapsed

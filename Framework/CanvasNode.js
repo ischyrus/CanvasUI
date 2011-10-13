@@ -4,6 +4,8 @@
  * Time: 9:18 PM
  */
 
+var UI = {};
+
 /**
   CanvasNode is the base object for all items in CanvasUI.
 
@@ -19,24 +21,30 @@
 
   @return Constructor object for CanvasNode
   */
-var UI = {};
-
 UI.CanvasNode = function() {
   var c = function() {
     this.ancestors = ['CanvasNode'];
-    this.initialize.apply(this, arguments)
-    this.typeName = this.ancestors[this.ancestors.length - 1]
+
+		this.initialize.apply(this, arguments);
+    this.typeName = this.ancestors[this.ancestors.length - 1];
+
+		this.width = 0;
+		this.height = 0;
   }
-  c.ancestors = $A(arguments)
-  c.prototype = {}
-  for(var i = 0; i<arguments.length; i++) {
-    var a = arguments[i]
+
+  c.ancestors = $A(arguments);
+  c.prototype = {};
+
+  for (var i = 0; i < arguments.length; i++) {
+    var a = arguments[i];
     if (a.prototype) {
-      Object.extend(c.prototype, a.prototype)
-    } else {
-      Object.extend(c.prototype, a)
+      Object.extend(c.prototype, a.prototype);
+    }
+		else {
+      Object.extend(c.prototype, a);
     }
   }
-  Object.extend(c, c.prototype)
-  return c
+	
+  Object.extend(c, c.prototype);
+  return c;
 }

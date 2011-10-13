@@ -2,54 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cf89b65-69aa-47cc-9ed2-1157c9cfcac9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Border.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/CanvasSurfaceManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/SelectionOutline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Separator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/StackPanel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/Toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CanvasUI/UI5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Animatable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/AudioNode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/CanvasSupport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/CatmullRomSpline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Circle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Curves.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Drawable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/E.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/ElementNode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Ellipse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/FramerateHelper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Gradient.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/ImageNode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Klass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/LinkNode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Mouse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/ObjectExtensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Path.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Pattern.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Polygon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/RecordingContext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Rectangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/SVGParser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Spiral.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/String.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/TextNode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Timeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Framework/Transformable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ElementTree.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/Canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/E.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dev.html" afterPath="$PROJECT_DIR$/Dev.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/CanvasNode.js" afterPath="$PROJECT_DIR$/Framework/CanvasNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IncludeOrder.cfg" afterPath="$PROJECT_DIR$/IncludeOrder.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/Helpers.js" afterPath="$PROJECT_DIR$/Framework/Helpers.js" />
     </list>
     <ignored path="canvasanimator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,11 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CanvasNode.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CanvasNode.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="943" selection-end="943" vertical-scroll-proportion="0.29156998">
+            <state line="33" column="0" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Canvas.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Framework/Canvas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="34" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.8449304">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dev.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dev.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="-7.8461537">
+              <folding>
+                <element signature="tag#style#0;tag#head#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,9 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Framework/Ellipse.js" />
-        <option value="$PROJECT_DIR$/Framework/Gradient.js" />
-        <option value="$PROJECT_DIR$/Framework/Line.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CanvasUI/SelectionOutline.js" />
         <option value="$PROJECT_DIR$/Temp.html" />
@@ -105,12 +80,15 @@
         <option value="$PROJECT_DIR$/CanvasUI/StackPanel.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Toolbar.js" />
         <option value="$PROJECT_DIR$/Framework/Rectangle.js" />
-        <option value="$PROJECT_DIR$/Framework/CanvasNode.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Border.js" />
         <option value="$PROJECT_DIR$/CanvasUI/Button.js" />
         <option value="$PROJECT_DIR$/NewFramework/CanvasNode.js" />
-        <option value="$PROJECT_DIR$/Dev.html" />
         <option value="$PROJECT_DIR$/IncludeOrder.cfg" />
+        <option value="$PROJECT_DIR$/Framework/E.js" />
+        <option value="$PROJECT_DIR$/Dev.html" />
+        <option value="$PROJECT_DIR$/Framework/Helpers.js" />
+        <option value="$PROJECT_DIR$/Framework/CanvasNode.js" />
+        <option value="$PROJECT_DIR$/Framework/Canvas.js" />
       </list>
     </option>
   </component>
@@ -159,7 +137,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -189,24 +166,25 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/NewFramework" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Chrome - Dev">
+  <component name="RunManager" selected="JavaScript Debug.Firfox">
     <configuration default="true" type="XSLT" factoryName="XSLT">
       <option name="myOutputFile" />
       <option name="myOpenOutputFile" value="false" />
@@ -252,8 +230,16 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="Firfox" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="firefox" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/Dev.html" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Chrome - Dev" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Firfox" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -275,7 +261,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
-    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
+    <configuration useDefault="true">C:\Users\sscherm\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -287,16 +273,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32997844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.109375" sideWeight="0.68333334" order="1" side_tool="true" content_ui="tabs" x="617" y="81" width="206" height="756" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10593389" sideWeight="0.99924356" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32754344" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107533805" sideWeight="0.67344344" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32655653" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -349,6 +335,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Dev.html</url>
+          <line>22</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Framework/CanvasNode.js</url>
+          <line>27</line>
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="javascript-exception">
           <properties />
@@ -357,28 +353,44 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Framework/Helpers.js">
+    <entry file="file://$PROJECT_DIR$/IncludeOrder.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dev.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="210" selection-end="210" vertical-scroll-proportion="0.051140834">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IncludeOrder.cfg">
+    <entry file="file://$PROJECT_DIR$/Framework/E.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="1" selection-start="4277" selection-end="4277" vertical-scroll-proportion="5.238569">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dev.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="-7.8461537">
+          <folding>
+            <element signature="tag#style#0;tag#head#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Framework/CanvasNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="943" selection-end="943" vertical-scroll-proportion="0.29156998">
+        <state line="33" column="0" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="34" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.8449304">
           <folding />
         </state>
       </provider>

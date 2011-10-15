@@ -61,10 +61,6 @@ UI.CanvasNode = function() {
 			return { width: w, height: h };
 		};
 
-		///this.draw = function(ctx, w ,h) {
-		///	throw "draw function is not implemented";
-		///};
-
 		this.sendHandleFrame = function(ctx, w, h) {
 			if (!this.isVisible) {
 				return;

@@ -5,7 +5,7 @@
 		<script src="Framework/Lib/E.js" type="text/javascript"></script>
 		<script src="Framework/Core/CanvasNode.js" type="text/javascript"></script>
 		<script src="Framework/Core/Canvas.js" type="text/javascript"></script>
-		<script src="Framework/Shapes/Rectangle.js" type="text/javascript"></script>
+		<script src="Framework/Controls/Shapes/Rectangle.js" type="text/javascript"></script>
 
 		<style type="text/css">
 			* {
@@ -21,7 +21,13 @@
 		</style>
 		<script type="text/javascript">
 			window.onload = function() {
-				var canvas = new UI.Canvas(document.body, 'drawingCanvas', 400, 400, new UI.Rectangle(100, 100, { fill : 'red', x : 10, y : 10 }), null);
+				var rect = new UI.Rectangle(100, 100, {
+					fill : 'red',
+					radiusX : 4,
+					radiusY : 4,
+					x : 10,
+					y : 10 });
+				var canvas = new UI.Canvas(document.body, 'drawingCanvas', 400, 400, rect, null);
 			};
 		</script>
 	</head>

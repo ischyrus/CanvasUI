@@ -211,6 +211,12 @@ UI.Canvas = UI.CanvasNode({
 	},
 
 	draw : function(ctx, w, h){
+		// If you are drawing a line at (0,0) you'll have an issue with the line not being crisp.
+		// To draw a line on the 0th pixel the coordinates actually need to be (0.5, 0.5).
+		// Rather than having to remember this and adding 0.5 to everything the canvas will
+		// translate the coordinates up front and it will be applied to everything within it.
+		ctx.translate(0.5, 0.5);
+
 		if (this.content) {
 			this.content.draw(ctx, w, h);
 		}

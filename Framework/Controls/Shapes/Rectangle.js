@@ -32,6 +32,7 @@ UI.Rectangle = UI.CanvasNode({
 	radiusX : 0,
 	radiusY : 0,
 	stroke : null,
+	strokeWidth : 0,
 	x : 0,
 	y : 0,
 
@@ -53,6 +54,7 @@ UI.Rectangle = UI.CanvasNode({
 	},
 
 	draw : function(ctx, w ,h) {
+		ctx.strokeWidth = this.strokeWidth;
 		if (this.fill) {
 			ctx.fillStyle = this.fill;
 		}
@@ -95,7 +97,7 @@ UI.Rectangle = UI.CanvasNode({
 		if (this.fill) {
 			ctx.fill();
 		}
-		if (this.stroke) {
+		if (this.stroke || this.strokeWidth) {
 			ctx.stroke();
 		}
 	}

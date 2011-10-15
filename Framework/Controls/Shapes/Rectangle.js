@@ -29,8 +29,10 @@
 
 UI.Rectangle = UI.CanvasNode({
 	fill: null,
-	radiusX : 0,
-	radiusY : 0,
+	/*
+	 * The radius to put on corners. At the moment the radius must be the same for all corners.
+	 */
+	cornerRadius : 0,
 	stroke : null,
 	strokeWidth : 0,
 	x : 0,
@@ -64,34 +66,32 @@ UI.Rectangle = UI.CanvasNode({
 
 		var x = this.x;
 		var y = this.y;
+		var thisWidth = this.width;
+		var thisHeight = this.height;
 
-    if (this.radiusX || this.radiusY) {
-      var rx = Math.min(this.width * 0.5, this.radiusX || this.radiusY);
-      var ry = Math.min(this.height * 0.5, this.radiusY || rx);
-      var k = 0.5522847498;
-      var krx = k * rx;
-      var kry = k * ry;
-      ctx.moveTo(x + rx, y);
-      ctx.lineTo(x - rx + this.width, y);
-      ctx.bezierCurveTo(x - rx + this.width + krx, y, x + this.width, y + ry - kry, x + this.width, y + ry);
-      ctx.lineTo(x + this.width, y + this.height - ry);
-      ctx.bezierCurveTo(x + this.width, y + this.height - ry + kry, x - rx + this.width + krx, y + this.height, x - rx + this.width, y + this.height);
-      ctx.lineTo(x + rx, y + this.height);
-      ctx.bezierCurveTo(x + rx - krx, y + this.height, x, y + this.height - ry + kry, x, y + this.height - ry);
-      ctx.lineTo(x, y + ry);
-      ctx.bezierCurveTo(x, y + ry - kry, x + rx - krx, y, x + rx, y);
+    if (this.cornerRadius) {
+			ctx.beginPath();
+			ctx.moveTo(x + this.cornerRadius, y);
+			ctx.lineTo(x + thisWidth - this.cornerRadius, y);
+			ctx.quadraticCurveTo(x + thisWidth, y, x + thisWidth, y + this.cornerRadius);
+			ctx.lineTo(x + thisWidth, y + thisHeight - this.cornerRadius);
+			ctx.quadraticCurveTo(x + thisWidth, y + thisHeight, x + thisWidth - this.cornerRadius, y + thisHeight, this.cornerRadius);
+			ctx.lineTo(x + this.cornerRadius, y + thisHeight);
+			ctx.quadraticCurveTo(x, y + thisHeight, x, y + this.height - this.cornerRadius);
+			ctx.lineTo(x, y + this.cornerRadius);
+			ctx.quadraticCurveTo(x, y, x + this.cornerRadius, y);
       ctx.closePath();
     }
 		else {
-      if (this.width < 0) {
-				x += this.width;
+      if (thisWidth < 0) {
+				x += thisWidth;
 			}
 
-      if (this.height < 0) {
-				y += this.height;
+      if (thisHeight < 0) {
+				y += thisHeight;
 			}
 			
-      ctx.rect(x, y, Math.abs(this.width), Math.abs(this.height));
+      ctx.rect(x, y, Math.abs(thisWidth), Math.abs(thisHeight));
     }
 
 		if (this.fill) {

@@ -88,7 +88,8 @@ UI.Canvas = UI.CanvasNode({
 	 */
   _startTime : 0,
 	/*
-	 * The frames per second averaged over the number of frames set by fpsFrames.
+	 * The frames per second averaged over the number of frames set by fpsFrames and the amount
+	 * of time it took start to end.
 	 */
   realFps : 0,
 	/*
@@ -211,6 +212,8 @@ UI.Canvas = UI.CanvasNode({
 	},
 
 	draw : function(ctx, w, h){
+		ctx.clearRect(0, 0, w, h);
+
 		// If you are drawing a line at (0,0) you'll have an issue with the line not being crisp.
 		// To draw a line on the 0th pixel the coordinates actually need to be (0.5, 0.5).
 		// Rather than having to remember this and adding 0.5 to everything the canvas will
@@ -220,6 +223,14 @@ UI.Canvas = UI.CanvasNode({
 		if (this.content) {
 			this.content.draw(ctx, w, h);
 		}
+
+		var fpsOutput = 'fps: ' + this.fps.toFixed(2) + ' real fps: ' + this.realFps.toFixed(2);
+
+		ctx.fillStyle = 'Black';
+		ctx.fillRect(5, 7, ctx.measureText(fpsOutput).width, 10);
+		ctx.fillStyle = '#ff00ff';
+		ctx.fillText(fpsOutput, 5, 15, null);
+
 
 		// The canvas will always be the size it was created at.
 		return {

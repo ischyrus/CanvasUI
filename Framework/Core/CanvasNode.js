@@ -35,6 +35,7 @@ Klass = function() {
   c.ancestors = $A(arguments);
   c.prototype = {};
 
+
   for (var i = 0; i < arguments.length; i++) {
     var a = arguments[i];
     if (a.prototype) {

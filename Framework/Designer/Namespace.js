@@ -35,7 +35,7 @@ UI.Designer = {
 	 * The little circles that are drawn in most corners during selection.
 	 * This determines their radius.
 	 */
-	selectorKnobRadius: 2,
+	selectorKnobRadius: 3,
 	selectorKnobFill: '#FF00FF',
-	selectorKnobStroke: 'black'
+	selectorKnobStroke: 'transparent'
 };

@@ -26,7 +26,32 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+Klass = function() {
+	var c = function() {
+   	this.initialize.apply(this, arguments);
+    this.typeName = this.ancestors[this.ancestors.length - 1];
+  }
 
+  c.ancestors = $A(arguments);
+  c.prototype = {};
+
+  for (var i = 0; i < arguments.length; i++) {
+    var a = arguments[i];
+    if (a.prototype) {
+      Object.extend(c.prototype, a.prototype);
+    }
+		else {
+      Object.extend(c.prototype, a);
+    }
+  }
+
+  Object.extend(c, c.prototype);
+  return c;
+};
+
+/**
+ * @namespace The root CanvasUI namespace.
+ */
 var UI = {};
 
 /**
@@ -44,24 +69,32 @@ var UI = {};
 
   @return Constructor object for CanvasNode
   */
-UI.CanvasNode = function() {
-  var c = function() {
-    this.ancestors = ['CanvasNode'];
+UI.CanvasNode = Klass({
+	 ancestors : ['CanvasNode'],
 
-		this.desiredSize = null;
-		this.width = 0;
-		this.height = 0;
+		desiredSize : null,
+		width : 0,
+		height : 0,
 
-		this.doMeasure = function(w, h) {
+		isVisible : true,
+		font : '10px Arial',
+
+		initialize : function(config) {
+			if (config) {
+				Object.extend(this, config);
+			}
+		},
+
+		doMeasure : function(w, h) {
 			this.desiredSize = this.measure(w, h);
 			return this.desiredSize;
-		}
+		},
 
-		this.measure = function(w, h) {
+		measure : function(w, h) {
 			return { width: w, height: h };
-		};
+		},
 
-		this.sendHandleFrame = function(ctx, w, h) {
+		sendHandleFrame : function(ctx, w, h) {
 			if (!this.isVisible) {
 				return;
 			}
@@ -73,27 +106,4 @@ UI.CanvasNode = function() {
 
 			ctx.restore();
 		}
-
-		this.isVisible = true;
-		this.font = '10px Arial';
-
-		this.initialize.apply(this, arguments);
-    this.typeName = this.ancestors[this.ancestors.length - 1];
-  }
-
-  c.ancestors = $A(arguments);
-  c.prototype = {};
-
-  for (var i = 0; i < arguments.length; i++) {
-    var a = arguments[i];
-    if (a.prototype) {
-      Object.extend(c.prototype, a.prototype);
-    }
-		else {
-      Object.extend(c.prototype, a);
-    }
-  }
-	
-  Object.extend(c, c.prototype);
-  return c;
-}
+});

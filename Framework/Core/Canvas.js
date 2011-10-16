@@ -26,7 +26,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-UI.Canvas = UI.CanvasNode({
+UI.Canvas = Klass(UI.CanvasNode, {
 	/*
 	 * The id used for the div containing the canvas.
 	 */
@@ -110,10 +110,7 @@ UI.Canvas = UI.CanvasNode({
 	_context: null,
 
 	initialize : function(container, divId, w, h, content, config) {
-		// TODO: It would be nice if this config handling was pushed down into CanvasNode.
-		if (config) {
-				Object.extend(this, config);
-		}
+		UI.CanvasNode.initialize.call(this, config);
 
 		// TODO: It would be nice if this was done in a more abstract way, otherwise every type has to know to do this.
 		this.ancestors.push('Canvas');
@@ -126,16 +123,13 @@ UI.Canvas = UI.CanvasNode({
 				style: {
 						overflow: 'hidden',
 						width: w + 'px',
-						height: h + 'px',
-						position: 'relative'
+						height: h + 'px'
 				}
 		});
-		canvasContainer.id = this.divId;
 		this.canvasContainer = canvasContainer;
 
-		if (container) {
-				container.appendChild(canvasContainer);
-		}
+		container.appendChild(canvasContainer);
+		canvasContainer.id = this.divId;
 
 		this.mouseEventStack = [];
     this.canvas = canvas;

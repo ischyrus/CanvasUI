@@ -27,7 +27,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-UI.Rectangle = UI.CanvasNode({
+UI.Rectangle = Klass(UI.CanvasNode, {
 	fill: null,
 	/*
 	 * The radius to put on corners. At the moment the radius must be the same for all corners.
@@ -39,10 +39,7 @@ UI.Rectangle = UI.CanvasNode({
 	y : 0,
 
 	initialize : function(width, height, config) {
-		// TODO: It would be nice if this config handling was pushed down into CanvasNode.
-		if (config) {
-				Object.extend(this, config);
-		}
+		UI.CanvasNode.initialize.call(this, config);
 
 		// TODO: It would be nice if this was done in a more abstract way, otherwise every type has to know to do this.
 		this.ancestors.push('Rectangle');
@@ -56,7 +53,7 @@ UI.Rectangle = UI.CanvasNode({
 	},
 
 	draw : function(ctx, w ,h) {
-		ctx.strokeWidth = this.strokeWidth;
+		ctx.lineWidth = this.strokeWidth;
 		if (this.fill) {
 			ctx.fillStyle = this.fill;
 		}
@@ -100,5 +97,6 @@ UI.Rectangle = UI.CanvasNode({
 		if (this.stroke || this.strokeWidth) {
 			ctx.stroke();
 		}
-	}
+	},
+
 });

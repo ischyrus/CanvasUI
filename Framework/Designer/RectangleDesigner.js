@@ -44,12 +44,39 @@ UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
 	},
 
 	draw: function(ctx, width, height) {
-		ctx.fillStyle = '#FF00FF';
-		ctx.arc(this.x, this.y, 10, 0, Math.PI * 2, false);
+		ctx.translate(1, 1);
+		ctx.strokeStyle = UI.Designer.selectorKnobStroke;
+		ctx.fillStyle = UI.Designer.selectorKnobFill;
+
+		var x = this.target.x + this.target.width;
+		var y = this.target.y + this.target.height;
+
+		ctx.beginPath();
+		ctx.arc(this.target.x, this.target.y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.closePath();
+		ctx.stroke();
 		ctx.fill();
 
+		ctx.beginPath();
+		ctx.arc(x, this.target.y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(x, y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(this.target.x, y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fill();
+		
 		return this.desiredSize;
-	},
+	}
 });
 
 UI.Designer.RectangleDesigner.designerType = "Rectangle";

@@ -69,7 +69,7 @@ UI.Rectangle = Klass(UI.CanvasNode, {
 		var thisHeight = this.height;
 
     if (this.cornerRadius) {
-			this.roundedRect(ctx, 20, 20, 100, 100, 6);
+			this.roundedRect(ctx, x, y, thisWidth, thisHeight, this.cornerRadius);
     }
 		else {
       if (thisWidth < 0) {

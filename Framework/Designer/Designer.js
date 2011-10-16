@@ -27,11 +27,6 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-/**
- * @namespace Holds all functionality around controls for displaying adornments for CanvasNode manipulation.
- */
-UI.Designer = {};
-
 UI.Designer.Designer = Klass(UI.Canvas, {
 	_designers: [],
 	_panel: null,
@@ -59,8 +54,8 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 
 		var items = [this._target];
 
-		while (this._target.length > 0) {
-			var target = this._target.pop();
+		while (items.length > 0) {
+			var target = items.pop();
 			var designerType = designerMap[target.typeName];
 			if (designerType) {
 				var designer = new designerType(target, null);
@@ -69,8 +64,9 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 
 				// If the target of a designer has children it should make the available via a getChildren function.
 				if (designer.getChildren) {
-					for (var child in designer.getChildren()) {
-						items.push(child);
+					var children = designer.getChildren();
+					for (var i = 0; i < children.length; i++) {
+						items.push(children[i]);
 					}
 				}
 			}

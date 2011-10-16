@@ -55,7 +55,7 @@ UI.Panel = Klass(UI.CanvasNode, {
 	 */
 	draw: function(ctx, width, height) {
 		for (var i = 0; i < this._children.length; i++) {
-			this._children.sendHandleFrame(ctx, width, height);
+			this._children[i].sendHandleFrame(ctx, width, height);
 		}
 		return this.desiredSize;
 	}

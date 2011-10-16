@@ -1,8 +1,8 @@
 /**
  * Created by Steven Schermerhorn.
  * User: stevens
- * Date: 10/15/11
- * Time: 6:40 PM
+ * Date: 10/16/11
+ * Time: 12:46 PM
  * Copyright 2011 Steven Schermerhorn
  *
  * Permission is hereby granted, free of charge, to any person
@@ -27,23 +27,15 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-UI.Designer.CanvasDesigner = Klass(UI.CanvasNode, {
-	_target: null,
-
-	initialize: function(target, config) {
-		UI.CanvasNode.initialize.call(this, config);
-		this.ancestors.push("Designer.CanvasDesigner");
-
-		this._target = target;
-	},
-
-	draw: function(ctx, width, height) {
-		return this.desiredSize;
-	},
-
-	getChildren: function() {
-		return [this._target.content];
-	}
-});
-
-UI.Designer.CanvasDesigner.designerType = "Canvas";
+/**
+ * @namespace Holds all functionality around controls for displaying adornments for CanvasNode manipulation.
+ */
+UI.Designer = {
+	/**
+	 * The little circles that are drawn in most corners during selection.
+	 * This determines their radius.
+	 */
+	selectorKnobRadius: 2,
+	selectorKnobFill: '#FF00FF',
+	selectorKnobStroke: 'black'
+};

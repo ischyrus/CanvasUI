@@ -33,8 +33,15 @@
 UI.Designer = {};
 
 UI.Designer.Designer = Klass(UI.Canvas, {
+	_designers: [],
 	_panel: null,
 	_target: null,
+	/**
+	 *
+	 * @param container
+	 * @param canvas
+	 * @param config
+	 */
 	initialize: function(container, canvas, config) {
 		this._panel = new UI.Panel(null);
 		this._target = canvas;
@@ -44,10 +51,21 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 		this.ancestors.push('Designer');
 		this.createDesigners();
 	},
-
+	/**
+	 * Generates a designer for each element in the target canvas.
+	 */
 	createDesigners: function() {
 		var designerMap = this.discoverDesigners();
 
+		while (this._designers.length > 0) {
+			var target = decorators.pop();
+			var designerType = designerMap[target.typeName];
+			if (designerType) {
+				var designer = new designerType(target, null);
+				this._designers.push(designer);
+				this._panel.addChild(designer);
+			}
+		}
 	},
 	/**
 	 * Scan the UI.Designer namespace for decorators.

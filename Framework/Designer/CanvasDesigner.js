@@ -28,7 +28,9 @@
  */
 
 UI.Designer.CanvasDesigner = Klass(UI.CanvasNode, {
-	initialize: function(config) {
+	_target: null,
+
+	initialize: function(target, config) {
 		UI.CanvasNode.initialize.call(this, config);
 		this.ancestors.push("Designer.CanvasDesigner");
 	},

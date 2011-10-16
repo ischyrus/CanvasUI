@@ -30,13 +30,13 @@
 UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
 	target: null,
 
-	initialize: function(rectangle, config) {
+	initialize: function(target, config) {
 		UI.CanvasNode.initialize.call(this, config);
 
 		// TODO: It would be nice if this was done in a more abstract way, otherwise every type has to know to do this.
 		this.ancestors.push('RectangleDesigner');
 
-		this.target = rectangle;
+		this.target = target;
 	},
 
 	measure: function(w, h) {

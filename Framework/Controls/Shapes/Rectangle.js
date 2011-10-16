@@ -70,6 +70,7 @@ UI.Rectangle = Klass(UI.CanvasNode, {
 			ctx.beginPath();
 			ctx.moveTo(x + this.cornerRadius, y);
 			ctx.lineTo(x + thisWidth - this.cornerRadius, y);
+			//ctx.arc(x + this.width - this.cornerRadius, y + this.cornerRadius, this.cornerRadius, Math.PI * 1.5, 0, false);
 			ctx.quadraticCurveTo(x + thisWidth, y, x + thisWidth, y + this.cornerRadius);
 			ctx.lineTo(x + thisWidth, y + thisHeight - this.cornerRadius);
 			ctx.quadraticCurveTo(x + thisWidth, y + thisHeight, x + thisWidth - this.cornerRadius, y + thisHeight, this.cornerRadius);

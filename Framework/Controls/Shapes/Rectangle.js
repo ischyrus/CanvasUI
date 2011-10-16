@@ -54,6 +54,8 @@ UI.Rectangle = Klass(UI.CanvasNode, {
 
 	draw : function(ctx, w ,h) {
 		ctx.lineWidth = this.strokeWidth;
+		ctx.strokeWidth = 1;
+
 		if (this.fill) {
 			ctx.fillStyle = this.fill;
 		}
@@ -67,18 +69,7 @@ UI.Rectangle = Klass(UI.CanvasNode, {
 		var thisHeight = this.height;
 
     if (this.cornerRadius) {
-			ctx.beginPath();
-			ctx.moveTo(x + this.cornerRadius, y);
-			ctx.lineTo(x + thisWidth - this.cornerRadius, y);
-			//ctx.arc(x + this.width - this.cornerRadius, y + this.cornerRadius, this.cornerRadius, Math.PI * 1.5, 0, false);
-			ctx.quadraticCurveTo(x + thisWidth, y, x + thisWidth, y + this.cornerRadius);
-			ctx.lineTo(x + thisWidth, y + thisHeight - this.cornerRadius);
-			ctx.quadraticCurveTo(x + thisWidth, y + thisHeight, x + thisWidth - this.cornerRadius, y + thisHeight, this.cornerRadius);
-			ctx.lineTo(x + this.cornerRadius, y + thisHeight);
-			ctx.quadraticCurveTo(x, y + thisHeight, x, y + this.height - this.cornerRadius);
-			ctx.lineTo(x, y + this.cornerRadius);
-			ctx.quadraticCurveTo(x, y, x + this.cornerRadius, y);
-      ctx.closePath();
+			this.roundedRect(ctx, 20, 20, 100, 100, 6);
     }
 		else {
       if (thisWidth < 0) {
@@ -99,5 +90,19 @@ UI.Rectangle = Klass(UI.CanvasNode, {
 			ctx.stroke();
 		}
 	},
+
+	roundedRect: function (ctx, x, y, w, h, radius){
+		ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.lineTo(x + w - radius, y);
+    ctx.arcTo(x + w, y, x + w, y + radius, radius);
+    ctx.lineTo(x + w, y + h - radius);
+    ctx.arcTo(x + w, y + h, x + w - radius, y + h, radius);
+    ctx.lineTo(x + radius, y + h);
+    ctx.arcTo(x, y + h, x, y + h - radius, radius);
+    ctx.lineTo(x, y + radius);
+    ctx.arcTo(x, y, x + radius, y, radius);
+		ctx.closePath();
+	}
 
 });

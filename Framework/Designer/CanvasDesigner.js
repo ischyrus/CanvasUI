@@ -37,5 +37,9 @@ UI.Designer.CanvasDesigner = Klass(UI.CanvasNode, {
 
 	draw: function(ctx, width, height) {
 		return this.desiredSize;
+	},
+
+	getChildren: function() {
+		return [this._target.content];
 	}
 });

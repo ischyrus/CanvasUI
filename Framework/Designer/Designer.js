@@ -57,13 +57,22 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 	createDesigners: function() {
 		var designerMap = this.discoverDesigners();
 
-		while (this._designers.length > 0) {
-			var target = decorators.pop();
+		var items = [this._target];
+
+		while (this._target.length > 0) {
+			var target = this._target.pop();
 			var designerType = designerMap[target.typeName];
 			if (designerType) {
 				var designer = new designerType(target, null);
 				this._designers.push(designer);
 				this._panel.addChild(designer);
+
+				// If the target of a designer has children it should make the available via a getChildren function.
+				if (designer.getChildren) {
+					for (var child in designer.getChildren()) {
+						items.push(child);
+					}
+				}
 			}
 		}
 	},

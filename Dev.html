@@ -36,12 +36,11 @@
 		</style>
 		<script type="text/javascript">
 			window.onload = function() {
-				var rect = new UI.Rectangle(100, 100, {
-					stroke : 'red',
-					strokeWidth: 1,
-					cornerRadius : 12,
+				var rect = new UI.Rectangle(40, 40, {
+					stroke : 'black',
+					cornerRadius : 4,
 					x : 10,
-					y : 40
+					y : 10
 				});
 				var canvas = new UI.Canvas(document.body, 'drawingCanvas', 400, 400, rect, null);
 				var designer = new UI.Designer.Designer(document.body, canvas, null);

@@ -48,14 +48,6 @@ UI.Panel = Klass(UI.CanvasNode, {
 		this._children.push(child);
 	},
 	/**
-	 * Get the children.
-	 * @returns {Array} 
-	 */
-	getChildren: function(){
-		var clone = Object.clone(this._children);
-		return clone;
-	},
-	/**
 	 * Draw all the children in the canvas.
 	 * @param ctx The context
 	 * @param width 

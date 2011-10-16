@@ -49,7 +49,7 @@ UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
 		ctx.fill();
 
 		return this.desiredSize;
-	}
+	},
 });
 
 UI.Designer.RectangleDesigner.designerType = "Rectangle";

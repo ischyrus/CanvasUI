@@ -96,6 +96,10 @@ UI.Canvas = Klass(UI.CanvasNode, {
 	 * Indicates if the frame callback is looping.
 	 */
   isPlaying : true,
+	/**
+	 * The mouse server used to process events with the mouse.
+	 */
+	_mouseService: null,
 	/*
 	 * An internal value. A timestamp marking the start of the last frame.
 	 */
@@ -131,7 +135,8 @@ UI.Canvas = Klass(UI.CanvasNode, {
 		container.appendChild(canvasContainer);
 		canvasContainer.id = this.divId;
 
-		this.mouseEventStack = [];
+		this._mouseService = new UI.MouseService(this, null);
+		
     this.canvas = canvas;
     canvas.canvas = this;
     this.width = this.canvas.width;
@@ -141,10 +146,6 @@ UI.Canvas = Klass(UI.CanvasNode, {
 		this.frameHandler = function() {
 			th.onFrame();
 		};
-
-    if (this.canvas.parentNode) {
-			// TODO: Add event handlers to the div containing the canvas.
-		}
 
     this._startTime = new Date().getTime();
 

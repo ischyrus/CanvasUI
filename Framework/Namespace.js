@@ -1,9 +1,10 @@
 /**
  * Created by Steven Schermerhorn.
- * Date: 10/8/11
- * Time: 9:18 PM
+ * User: stevens
+ * Date: 10/16/11
+ * Time: 4:02 PM
  * Copyright 2011 Steven Schermerhorn
- * 
+ *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -27,55 +28,6 @@
  */
 
 /**
-  CanvasNode is the base object for all items in CanvasUI.
-
-  The constructor function calls #initialize with its arguments on types
-  based on CanvasNode.
-
-  The parameters to CanvasNode have their prototypes or themselves merged with the
-  constructor function's prototype.
-
-  Finally, the constructor function's prototype is merged with the constructor
-  function. So you can write Shape.getArea.call(this) instead of
-  Shape.prototype.getArea.call(this).
-
-  @return Constructor object for CanvasNode
-  */
-UI.CanvasNode = Klass({
-	 ancestors : ['CanvasNode'],
-
-		desiredSize : null,
-		width : 0,
-		height : 0,
-
-		isVisible : true,
-		font : '10px Arial',
-
-		initialize : function(config) {
-			if (config) {
-				Object.extend(this, config);
-			}
-		},
-
-		doMeasure : function(w, h) {
-			this.desiredSize = this.measure(w, h);
-			return this.desiredSize;
-		},
-
-		measure : function(w, h) {
-			return { width: w, height: h };
-		},
-
-		sendHandleFrame : function(ctx, w, h) {
-			if (!this.isVisible) {
-				return;
-			}
-
-			ctx.save();
-			ctx.font = this.font;
-
-			this.draw(ctx, w, h);
-
-			ctx.restore();
-		}
-});
+ * @namespace The root CanvasUI namespace.
+ */
+var UI = {};

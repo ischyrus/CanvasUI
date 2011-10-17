@@ -32,6 +32,10 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 	_panel: null,
 	_target: null,
 	/**
+	 * When true, an X will be drawn under the cursor.
+	 */
+	showMouselocation: false,
+	/**
 	 *
 	 * @param container
 	 * @param canvas
@@ -95,5 +99,26 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 		}
 
 		return designerMap;
+	},
+	draw: function(ctx, w, h) {
+		var size = UI.Canvas.draw.call(this, ctx, w, h);
+
+		if(this.showMouselocation && this._mouseService.location) {
+			var crosshairLength = 10;
+			var left = this._mouseService.location.x - (crosshairLength / 2);
+			var top = this._mouseService.location.y - (crosshairLength / 2);
+
+			ctx.strokeStyle = '#ff00ff';
+			ctx.fillStyle = '#ff00ff';
+			ctx.moveTo(left, top);
+			ctx.lineTo(left + crosshairLength, top + crosshairLength);
+			ctx.stroke();
+
+			ctx.moveTo(left + crosshairLength, top);
+			ctx.lineTo(left, top + crosshairLength);
+			ctx.stroke();
+		}
+
+		return size;
 	}
 });

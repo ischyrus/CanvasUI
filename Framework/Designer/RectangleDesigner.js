@@ -28,7 +28,7 @@
  */
 
 UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
-	target: null,
+	_target: null,
 
 	initialize: function(target, config) {
 		UI.CanvasNode.initialize.call(this, config);
@@ -36,11 +36,11 @@ UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
 		// TODO: It would be nice if this was done in a more abstract way, otherwise every type has to know to do this.
 		this.ancestors.push('RectangleDesigner');
 
-		this.target = target;
+		this._target = target;
 	},
 
 	measure: function(w, h) {
-		return this.target.desiredSize;
+		return this._target.desiredSize;
 	},
 
 	draw: function(ctx, width, height) {
@@ -48,17 +48,17 @@ UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
 		ctx.strokeStyle = UI.Designer.selectorKnobStroke;
 		ctx.fillStyle = UI.Designer.selectorKnobFill;
 
-		var x = this.target.x + this.target.width;
-		var y = this.target.y + this.target.height;
+		var x = this._target.x + this._target.width;
+		var y = this._target.y + this._target.height;
 
 		ctx.beginPath();
-		ctx.arc(this.target.x, this.target.y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.arc(this._target.x, this._target.y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
 		ctx.closePath();
 		ctx.stroke();
 		ctx.fill();
 
 		ctx.beginPath();
-		ctx.arc(x, this.target.y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.arc(x, this._target.y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
 		ctx.closePath();
 		ctx.stroke();
 		ctx.fill();
@@ -70,7 +70,7 @@ UI.Designer.RectangleDesigner = Klass(UI.CanvasNode, {
 		ctx.fill();
 
 		ctx.beginPath();
-		ctx.arc(this.target.x, y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
+		ctx.arc(this._target.x, y, UI.Designer.selectorKnobRadius, 0, Math.PI * 2, false);
 		ctx.closePath();
 		ctx.stroke();
 		ctx.fill();

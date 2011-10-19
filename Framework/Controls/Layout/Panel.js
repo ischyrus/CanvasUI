@@ -26,6 +26,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
+
 /**
  * Creates a new UI.Panel.
  * @class UI.Panel is used to draw multiple items as added without any special layout handling.
@@ -46,6 +47,7 @@ UI.Panel = Klass(UI.CanvasNode, {
 	 */
 	addChild: function(child) {
 		this._children.push(child);
+		child.parent = this;
 	},
 	/**
 	 * Draw all the children in the canvas.
@@ -53,10 +55,9 @@ UI.Panel = Klass(UI.CanvasNode, {
 	 * @param width 
 	 * @param height
 	 */
-	draw: function(ctx, width, height) {
+	draw: function(ctx) {
 		for (var i = 0; i < this._children.length; i++) {
-			this._children[i].sendHandleFrame(ctx, width, height);
+			this._children[i].sendHandleFrame(ctx);
 		}
-		return this.desiredSize;
 	}
 });

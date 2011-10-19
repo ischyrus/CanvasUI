@@ -39,7 +39,6 @@ UI.Canvas = Klass(UI.CanvasNode, {
 	 * The callback loop function for invoking onFrame when appropriate.
 	 */
   _frameLoop : null,
-  opacity : 1,
 	/*
 	 * The number of frames processed so far
 	 */
@@ -121,6 +120,7 @@ UI.Canvas = Klass(UI.CanvasNode, {
 
 		this.divId = divId;
 		this.content = content;
+		this.content.parent = this;
 
 		var canvas = E.canvas(w, h);
 		var canvasContainer = E('div', canvas, {
@@ -202,12 +202,10 @@ UI.Canvas = Klass(UI.CanvasNode, {
 		var timeDelta = (this.fixedTimestep) ? this.frameDuration : this._currentRealElapsed;
 		this._realTime = realTime;
 		this._time += timeDelta;
-
-		this.doMeasure(this.width, this.height);
 	},
 
-	draw : function(ctx, w, h){
-		ctx.clearRect(0, 0, w, h);
+	draw : function(ctx){
+		ctx.clearRect(0, 0, this.width, this.height);
 
 		// If you are drawing a line at (0,0) you'll have an issue with the line not being crisp.
 		// To draw a line on the 0th pixel the coordinates actually need to be (0.5, 0.5).
@@ -216,7 +214,7 @@ UI.Canvas = Klass(UI.CanvasNode, {
 		ctx.translate(0.5, 0.5);
 
 		if (this.content) {
-			this.content.draw(ctx, w, h);
+			this.content.draw(ctx);
 		}
 
 		var fpsOutput = 'fps: ' + this.fps.toFixed(2) + ' real fps: ' + this.realFps.toFixed(2);
@@ -225,25 +223,6 @@ UI.Canvas = Klass(UI.CanvasNode, {
 		ctx.fillRect(5, 7, ctx.measureText(fpsOutput).width, 10);
 		ctx.fillStyle = '#ff00ff';
 		ctx.fillText(fpsOutput, 5, 15, null);
-
-
-		// The canvas will always be the size it was created at.
-		return {
-			width: this.width,
-			height: this.height
-		};
-	},
-
-	measure : function(w, h) {
-		if (this.content) {
-			return this.content.measure(w, h);
-		}
-		
-		// The canvas will always be the size it was created at.
-		return {
-			width: this.width,
-			height: this.height
-		};
 	},
 
 	postHandleFrame : function() {
@@ -264,7 +243,7 @@ UI.Canvas = Klass(UI.CanvasNode, {
 		var context = this.getContext();
 		try {
 			this.preHandleFrame();
-			this.sendHandleFrame(context, this.desiredSize.width, this.desiredSize.height);
+			this.sendHandleFrame(context);
 			this.postHandleFrame();
 		}
 		catch(e) {

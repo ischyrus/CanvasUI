@@ -1,9 +1,8 @@
 /**
  * Created by Steven Schermerhorn.
- * Date: 10/8/11
- * Time: 9:18 PM
- * Copyright 2011 Steven Schermerhorn
- * 
+ * Date: 10/16/11
+ * Time: 9:44 PM
+ *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
  * files (the "Software"), to deal in the Software without
@@ -26,49 +25,46 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-/**
-  CanvasNode is the base object for all items in CanvasUI.
+UI.Circle = Klass(UI.CanvasNode, {
+	fill: 'transparent',
+	stroke: 'transparent',
+	radius: 0,
+	x: 0,
+	y: 0,
 
-  The constructor function calls #initialize with its arguments on types
-  based on CanvasNode.
+	initialize: function(radius, config) {
+		UI.CanvasNode.initialize.call(this, config);
+		this.ancestors.push('Circle');
+	},
+	
+	/**
+	 * Draw a circle on the ctx
+	 * @param ctx The context
+	 * @param w The amount of width made available
+	 * @param h The amount of height made available
+	 */
+	draw: function(ctx) {
+		ctx.fillStyle = this.fill || 'transparent';
+		ctx.strokeStyle = this.stroke || 'transparent';
 
-  The parameters to CanvasNode have their prototypes or themselves merged with the
-  constructor function's prototype.
+		ctx.beginPath();
+		ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+		ctx.closePath();
 
-  Finally, the constructor function's prototype is merged with the constructor
-  function. So you can write Shape.getArea.call(this) instead of
-  Shape.prototype.getArea.call(this).
-
-  @return Constructor object for CanvasNode
-  */
-UI.CanvasNode = Klass({
-	 ancestors : ['CanvasNode'],
-
-		parent: null,
-		width : 0,
-		height : 0,
-
-		isVisible : true,
-		font : '10px Arial',
-
-		hitTest: null,
-
-		initialize : function(config) {
-			if (config) {
-				Object.extend(this, config);
-			}
-		},
-
-		sendHandleFrame : function(ctx) {
-			if (!this.isVisible) {
-				return;
-			}
-
-			ctx.save();
-			ctx.font = this.font;
-
-			this.draw(ctx);
-
-			ctx.restore();
-		}
+		ctx.fill();
+		ctx.stroke();
+	},
+	/**
+	 * Determine if the point x,y are located within the circle.
+	 * @param ctx
+	 * @param x
+	 * @param y
+	 */
+	hitTest: function(ctx, x, y) {
+		ctx.beginPath();
+		ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+		ctx.closePath();
+		var result = ctx.isPointInPath(x, y);
+		return result;
+	}
 });

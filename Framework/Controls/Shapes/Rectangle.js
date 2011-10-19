@@ -48,11 +48,7 @@ UI.Rectangle = Klass(UI.CanvasNode, {
 		this.height = height;
 	},
 
-	measure : function(w, h) {
-		return { width: this.width, height: this.height };
-	},
-
-	draw : function(ctx, w ,h) {
+	draw : function(ctx) {
 		ctx.lineWidth = this.strokeWidth;
 		ctx.strokeWidth = 1;
 
@@ -103,6 +99,24 @@ UI.Rectangle = Klass(UI.CanvasNode, {
     ctx.lineTo(x, y + radius);
     ctx.arcTo(x, y, x + radius, y, radius);
 		ctx.closePath();
-	}
+	},
 
+	/**
+	 * Determine if the point x,y are located within the rectangle.
+	 * @param ctx
+	 * @param x
+	 * @param y
+	 */
+	hitTest: function(ctx, x, y) {
+		if (this.cornerRadius) {
+			this.roundedRect(ctx, x, y, thisWidth, thisHeight, this.cornerRadius);
+    }
+		else {
+			ctx.beginPath();
+			ctx.rect(this.x, this.y, this.width, this.height);
+			ctx.closePath();
+		}
+		var result = ctx.isPointInPath(x, y);
+		return result;
+	}
 });

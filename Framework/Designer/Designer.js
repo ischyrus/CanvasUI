@@ -34,7 +34,7 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 	/**
 	 * When true, an X will be drawn under the cursor.
 	 */
-	showMouselocation: false,
+	showMouselocation: true,
 	/**
 	 *
 	 * @param container
@@ -100,6 +100,12 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 
 		return designerMap;
 	},
+	/**
+	 *
+	 * @param ctx
+	 * @param w
+	 * @param h
+	 */
 	draw: function(ctx, w, h) {
 		var size = UI.Canvas.draw.call(this, ctx, w, h);
 

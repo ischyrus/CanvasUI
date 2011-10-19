@@ -44,6 +44,6 @@ UI.MouseService = Klass({
 	addEventListeners : function() {
 		this._canvas.canvasContainer.addEventListener('mousemove', (function(e) {
 			this.location = { x: e.layerX, y: e.layerY };
-		}).bind(this));
+		}).bind(this), true);
 	}
 });

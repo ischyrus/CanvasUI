@@ -114,15 +114,25 @@ UI.Designer.Designer = Klass(UI.Canvas, {
 			var left = this._mouseService.location.x - (crosshairLength / 2);
 			var top = this._mouseService.location.y - (crosshairLength / 2);
 
+			ctx.save();
+
 			ctx.strokeStyle = '#ff00ff';
 			ctx.fillStyle = '#ff00ff';
+
+			ctx.beginPath();
 			ctx.moveTo(left, top);
 			ctx.lineTo(left + crosshairLength, top + crosshairLength);
+			ctx.closePath();
 			ctx.stroke();
 
+			ctx.beginPath();
 			ctx.moveTo(left + crosshairLength, top);
 			ctx.lineTo(left, top + crosshairLength);
+			ctx.closePath();
 			ctx.stroke();
+
+			ctx.restore();
+			var x = 33 + 22;
 		}
 
 		return size;
